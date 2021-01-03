@@ -13,10 +13,10 @@ public class Sketch_Procedural extends PApplet {
     public static final int speedOfBall2 = 2;
     public static final int speedOfBall3 = 3;
     public static final int speedOfBall4 = 4;
-    private int w = 0;
-    private int x = 0;
-    private int y = 0;
-    private int z = 0;
+    private int positionOfBall1 = 0;
+    private int positionOfBall2 = 0;
+    private int positionOfBall3 = 0;
+    private int positionOfBall4 = 0;
 
     public static void main(String[] args){
         PApplet.main("Sketch_Procedural", args);
@@ -30,13 +30,13 @@ public class Sketch_Procedural extends PApplet {
 
     @Override
     public void draw() {
-        ellipse(w, heightOfBall1, DIAMETER, DIAMETER);
-        ellipse(x, heightOfBall2, DIAMETER, DIAMETER);
-        ellipse(y, heightOfBall3, DIAMETER, DIAMETER);
-        ellipse(z, heightOfBall4, DIAMETER, DIAMETER);
-        w+= speedOfBall1;
-        x+= speedOfBall2;
-        y+= speedOfBall3;
-        z+= speedOfBall4;
+        ellipse(positionOfBall1, heightOfBall1, DIAMETER, DIAMETER);
+        ellipse(positionOfBall2, heightOfBall2, DIAMETER, DIAMETER);
+        ellipse(positionOfBall3, heightOfBall3, DIAMETER, DIAMETER);
+        ellipse(positionOfBall4, heightOfBall4, DIAMETER, DIAMETER);
+        positionOfBall1+= speedOfBall1;
+        positionOfBall2+= speedOfBall2;
+        positionOfBall3+= speedOfBall3;
+        positionOfBall4+= speedOfBall4;
     }
 }
