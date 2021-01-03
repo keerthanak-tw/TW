@@ -36,11 +36,11 @@ public class SketchOOP extends PApplet {
     }
 
     private void drawCircle(CircleSetup circle) {
-        ellipse(circle.x_pos, circle.height, circle.diameter, circle.diameter);
+        ellipse(circle.position, circle.height, circle.diameter, circle.diameter);
         circleIncrement(circle);
     }
 
     private void circleIncrement(CircleSetup circle) {
-        circle.x_pos += circle.speed;
+        circle.position += circle.speed;
     }
 }
