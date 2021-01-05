@@ -1,4 +1,4 @@
-<h4>OpenProcessing sketches
+<h4>OpenProcessing sketches</h4>
 
 The project tries to implement moving circles challenge in which 4 circle has to traverse from left end to right end at **various speed**.<br>
 Two programming approaches - procedural and object oriented, was used.<br>
